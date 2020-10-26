@@ -4,18 +4,18 @@ A Hive Helsinki Web Development Bootcamp. The Piscine that lasts two weeks const
 
 The ten different days are...
 
-- __Day 00__ -
-- __Day 01__ -
-- __Day 02__ -
-- __Day 03__ -
-- __Day 04__ -
-- __Day 05__ -
-- __Day 06__ -
-- __Day 07__ -
-- __Day 08__ -
-- __Day 09__ -
+- __Day 00__ - HTML & CSS
+- __Day 01__ - Basics of PHP
+- __Day 02__ - REGEX
+- __Day 03__ - Network and System Administration with PHP
+- __Day 04__ - User Management with PHP
+- __Day 05__ - MySQL
+- __Day 06__ - PHP Object Oriented Programming
+- __Day 07__ - PHP Inheritance and Interfaces
+- __Day 08__ - Everything learned so far
+- __Day 09__ - JavaScript basics
 
 ...and the two bigger projects
 
-- __Rush00__ -
+- __Rush00__ - A simple webshop
 - __Rush01__ -
