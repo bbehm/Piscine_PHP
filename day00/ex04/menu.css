@@ -1,0 +1,49 @@
+body {
+	background-color: black;
+}
+a {
+	color: purple;
+}
+.menu {
+	padding-top: 50px;
+}
+.menu ul {
+	list-style: none;
+	margin: auto;
+	width: 100%;
+	padding-left: 15%;
+}
+.menu ul li {
+	background-color: hotpink;
+	color: purple;
+	border-radius: 10px;
+	width: 300px;
+	margin: auto;
+	padding: 10px;
+	height: 50px;
+	border-top: 1px solid purple;
+	font-size: 24px;
+	text-align: center;
+	float: left;
+	position: relative;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.menu ul li:hover {
+	background-color: purple;
+	color: white;
+}
+.menu ul ul {
+	display: none;
+}
+.menu ul li:hover > ul {
+	display: block;
+	float: right;
+	margin-top: 30px;
+	margin-right: 10px;
+	color: white;
+}
+.menu ul ul ul {
+	margin-left: 81%;
+	top: -13px;
+	position: absolute;
+}
