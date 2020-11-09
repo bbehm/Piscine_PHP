@@ -19,3 +19,16 @@ The ten different days are...
 
 - __Rush00__ - A simple webshop
 - __Rush01__ -
+
+---
+
+## Resources
+
+HTML & CSS
+- [How to center in CSS](http://howtocenterincss.com/)
+
+PHP
+- [Cool youtube channel](https://www.youtube.com/playlist?list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-)
+
+REGEX
+- [regexr.com](https://regexr.com/)
