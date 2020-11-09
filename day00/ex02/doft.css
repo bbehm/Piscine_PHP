@@ -1,0 +1,185 @@
+/* GENERAL */
+
+body {
+	background-color: #505050;
+	position: relative;
+}
+
+p {
+	float: left;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 14px;
+	margin: 5px 10px 0px 10px;
+}
+
+.container {
+	display: block;
+	width: 100%;
+	position: relative;
+	float: left;
+}
+
+/* BANNER AREA */
+
+.banner {
+	width: 75%;
+	background-color: #909090;
+	position: relative;
+	border-radius: 15px;
+	height: 135px;
+	margin: 12px auto 20px;
+	box-shadow: 9px 9px 9px;
+}
+
+#banner-image {
+	float: left;
+	margin: 10px;
+	height: 110px;
+}
+
+#loupe {
+	position: absolute;
+	margin: auto;
+	bottom: -20px;
+	right: 30px;
+}
+
+#reload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 20px;
+	margin: 10px;
+}
+
+#disconnect {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 20px;
+	margin: 10px;
+}
+
+/* LEFT BAR */
+
+.left {
+	background-color: #909090;
+	width: 8%;
+	position: relative;
+	height: 450px;
+	margin: 0 0 60px 13%;
+	border-radius: 10px;
+	float: left;
+	box-shadow: 9px 9px 9px;
+}
+
+.left-bar-img {
+	margin: 10% 28% 0%;
+	height: 65px;
+}
+
+#look {
+	border: 5px solid red;
+	border-radius: 4px;
+}
+
+/* MIDDLE AREA */
+
+.middle {
+	position: relative;
+	background-color: #909090;
+	width: 55%;
+	float: left;
+	border-radius: 10px;
+	height: 600px;
+	margin: 0 30px 60px 30px;
+	box-shadow: 9px 9px 9px;
+}
+
+.link {
+	display: block;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+
+#cluster {
+	height: 97%;
+	width: 98%;
+	margin: 8px 5px 8px 5px;
+}
+
+/* RIGHT BAR */
+
+.right {
+	background-color: #909090;
+	float: left;
+	position: relative;
+	width: 7.5%;
+	height: 430px;
+	margin: 0 12% 60px 0;
+	box-shadow: 9px 9px 9px;
+	border-radius: 10px;
+}
+
+#help {
+	margin: 10% 20% 5%;
+	height: 100px;
+}
+
+#clean {
+	margin: 5% 20% 5%;
+	height: 55px;
+}
+
+#stuck {
+	height: 16%;
+	width: 84%;
+	margin: auto 8% auto;
+	position: relative;
+	background-image: url("resources/brick.jpg");
+}
+
+/* POPUP WINDOW */
+
+.popup {
+	background-color: #88FF88;
+	position: absolute;
+	top: 700px;
+	left: 180px;
+	width: 25%;
+	height: 22%;
+	border-radius: 8px;
+	box-shadow: 9px 9px 9px;
+}
+
+#big-text {
+	font-size: 40px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+#shadow {
+	text-shadow: 5px 5px 3px #BD0000;
+}
+
+#form {
+	position: absolute;
+	top: 55%;
+	left: 10px;
+	width: 70%;
+	height: 10%;
+	border-top: 2px solid grey;
+}
+
+#button {
+	position: absolute;
+	top: 55%;
+	left: 360px;
+	vertical-align: middle;
+}
+
+#button-text {
+	font-size: 12px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
