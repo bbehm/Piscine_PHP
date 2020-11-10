@@ -19,6 +19,10 @@ p {
 	float: left;
 }
 
+#invisible {
+	width: 0px;
+}
+
 /* BANNER AREA */
 
 .banner {
