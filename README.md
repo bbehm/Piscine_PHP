@@ -24,11 +24,13 @@ The ten different days are...
 
 ## Resources
 
-HTML & CSS
+__HTML & CSS__
 - [How to center in CSS](http://howtocenterincss.com/)
 
-PHP
-- [Cool youtube channel](https://www.youtube.com/playlist?list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-)
+__PHP__
+- [Youtube channel](https://www.youtube.com/playlist?list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-)
+- - `php --rf 'functionName'`
 
-REGEX
+__REGEX__
 - [regexr.com](https://regexr.com/)
+- [regex101.com](https://regex101.com/)
