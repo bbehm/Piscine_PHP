@@ -29,7 +29,7 @@ __HTML & CSS__
 
 __PHP__
 - [Youtube channel](https://www.youtube.com/playlist?list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-)
-- - `php --rf 'functionName'`
+- `php --rf 'functionName'`
 
 __REGEX__
 - [regexr.com](https://regexr.com/)
