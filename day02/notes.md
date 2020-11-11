@@ -21,9 +21,12 @@ To search for __special__ characters; use (\) backslash to escape them.
 
 ### 1. Regex __functions in PHP__
 
-- preg_match()
-- preg_match_all()
-- preg_replace()
+- __preg_match()__ - find the first match of a pattern in a string
+- __preg_match_all()__ - finds all matches of a pattern in a string
+- __preg_replace()__ - returns a string where matches of a patterns are replaces with a substring
+- __preg_split()__ - breaks a string into an array using matches of regex as separators
+- __preg_grep()__ - returns an array consisting only of elements from the input array which matched the pattern
+- __preg_filter()__ - basically the same as preg_replace() but returns null if nothing was replaced
 
 ### 2. Regex __modifiers__
 
