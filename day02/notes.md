@@ -13,6 +13,8 @@ A regular expression (or regex) is a sequence of characters that form a search p
 
 - [Regex101](https://regex101.com/)
 - [PHP Regex](https://www.w3schools.com/php/php_regex.asp)
+- [Rakko Tester tool](https://en.rakko.tools/tools/57/)
+- [PHP Live Regex](https://www.phpliveregex.com/#tab-preg-match)
 
 ---
 
@@ -28,6 +30,8 @@ To search for __special__ characters; use (\) backslash to escape them.
 - __preg_split()__ - breaks a string into an array using matches of regex as separators
 - __preg_grep()__ - returns an array consisting only of elements from the input array which matched the pattern
 - __preg_filter()__ - basically the same as preg_replace() but returns null if nothing was replaced
+
+The __preg_match__ functions create an array - $matches[]......
 
 ### 2. Regex __modifiers__
 
