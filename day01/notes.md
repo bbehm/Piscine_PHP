@@ -10,3 +10,8 @@ Basically the same. `echo` has no return value while `print`has a return value o
 
 - __strpbrk()__: searching a string for characters 
 - ...
+
+### New syntax (for me)
+
+- [Switch statements](https://www.w3schools.com/php/php_switch.asp)
+- [Arrow functions](https://www.php.net/manual/en/functions.arrow.php) in PHP
