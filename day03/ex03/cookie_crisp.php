@@ -10,11 +10,13 @@
 			break ;
 		case "delete":
 			if ($request['name']) {
-				setcookie($vars["name"], "", time() - 3600);
+				// any negative expiration date will destroy a cookie
+				setcookie($vars["name"], "", time() - 1);
 			}
 			break;
 		case "set":
 			if ($request['name']) {
+				// I set this cookie to have an expiration date 30 days from now
 				setcookie($request['name'], $request['value'], time() + (2592000), '/');
 			}
 			break ;
