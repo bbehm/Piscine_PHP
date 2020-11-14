@@ -6,7 +6,7 @@ if ($_POST['login'] && $_POST['oldpw'] && $_POST['newpw'] && $_POST['submit'] ==
 	$old_pw = hash('whirlpool', $_POST['oldpw']);
 	$new_pw = hash('whirlpool', $_POST['newpw']);
 	foreach ($user_info as $key => $value) {
-		if ($value['login'] == $_POST['login'] && $old_pw == $new_pw) {
+		if ($value['login'] == $_POST['login'] && $old_pw == $value['passwd']) {
 			$user_info[$key]['passwd'] = $new_pw;
 			$done = true;
 		}

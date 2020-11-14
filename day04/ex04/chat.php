@@ -1,5 +1,7 @@
 <?php
 session_start();
+echo $_SESSION['loggued_on_user'] . "HELLO\n";
+
 if ($_SESSION['loggued_on_user']) {
 	$file_path = '../htdocs/private/chat';
 	if (file_exists($file_path)) {

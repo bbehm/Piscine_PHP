@@ -1,8 +1,8 @@
 <?php
 include ('auth.php');
 session_start();
-if (auth($_GET['login'], $_GET['passwd'])) {
-	$_SESSION['loggued_on_user'] = $_GET['login'];
+if (auth($_POST['login'], $_POST['passwd'])) {
+	$_SESSION['loggued_on_user'] = $_POST['login'];
 	header('Content-type: text/html');
 } else {
 	$_SESSION['loggued_on_user'] = "";

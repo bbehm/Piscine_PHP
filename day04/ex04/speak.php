@@ -6,7 +6,7 @@ if ($_SESSION['loggued_on_user']) {
 	if (!file_exists($file_path)) {
 		file_put_contents($file_path, null);
 	}
-	if ($_POST[['msg']]) {
+	if ($_POST['msg']) {
 		$message = $_POST['msg'];
 		$fp = fopen($filename, "r+");
 		flock($fp, LOCK_EX);
