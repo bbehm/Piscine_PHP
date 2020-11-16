@@ -30,7 +30,7 @@ function create_directory($url) {
 function download_images($images, $directory) {
 	foreach ($images as $imageUrl) {
 		$filename = basename($imageUrl);
-		$filepath = "./".$directory.$filename;
+		$filepath = "./".$directory."/".$filename;
 		file_put_contents($filepath, file_get_contents($imageUrl));
 	}
 }
