@@ -1,5 +1,4 @@
 <?php
-// This class will allow us to represent colors and perform a few simple operations on their components
 
 class Color {
 	public static $verbose = FALSE;
@@ -53,10 +52,8 @@ class Color {
 			'blue' => $this->blue * $f)));
 	}
 
-	public static function doc()
-    {
+	public static function doc() {
         echo file_get_contents("Color.doc.txt");
 	}
 }
-
 ?>
