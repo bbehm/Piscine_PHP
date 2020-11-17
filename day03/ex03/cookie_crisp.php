@@ -8,10 +8,10 @@
 				}		
 			}
 			break ;
-		case "delete":
+		case "del":
 			if ($request['name']) {
 				// any negative expiration date will destroy a cookie
-				setcookie($vars["name"], "", time() - 1);
+				setcookie($request['name'], "", time() - 1);
 			}
 			break;
 		case "set":
