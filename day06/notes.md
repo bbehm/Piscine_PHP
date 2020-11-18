@@ -22,3 +22,10 @@
 
 ### Private and public
 
+---
+
+### Tips for testing
+
+1. Run the main_XX.php into output into a file - Eg. `php main_00.php > my_output.txt`.
+2. Compare `my_output.txt` with the given sample output `main_00.out` - `diff my_output.txt main_00.out`
+
