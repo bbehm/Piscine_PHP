@@ -1,0 +1,4 @@
+
+<- Vertex ----------------------------------------------------------------------
+The Vertex class offers a coordinate encapsulation and provides reading and writing accessors for the corresponding attributes.
+---------------------------------------------------------------------- Vertex ->
