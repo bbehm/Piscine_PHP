@@ -14,3 +14,11 @@
 - __'::'__ [scope resolution operator](https://www.php.net/manual/en/language.oop5.paamayim-nekudotayim.php)
 - __self operator__: represents the current class and thus is used to access class variables or static variables
 - '>>' and '&'
+- __$this__: [the this keyword](https://tutorials.supunkavinda.blog/php/oop-this#:~:text=%24this%20refers%20to%20the%20current,object%20of%20the%20current%20method.) refers to the object of the current method
+
+---
+### Methods and Classes
+
+
+### Private and public
+
