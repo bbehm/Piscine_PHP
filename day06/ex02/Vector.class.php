@@ -53,11 +53,7 @@ class Vector {
 	// returns vectors length
 	public function magnitude() {
 		$magnitude = (float)sqrt((pow($this->_x, 2) + pow($this->_y, 2) + pow($this->_z, 2)));
-		if ($magnitude == 1) {
-			return ("norm");
-		} else {
-			return ($magnitude);
-		}
+		return ($magnitude);
 	}
 	// returns normalized (divided by length) version of vector
 	public function normalize() {
@@ -95,17 +91,9 @@ class Vector {
 	}
 	// returns cosine betweeen vectors
 	public function cos(Vector $rhs) {
-		$length_one = (int)$this->magnitude();
-		$length_two = (int)$rhs->magnitude();
-		$dot = (int)$this->dotProduct($rhs);
-		$angle = (int)($length_one * $length_two);	
-		if ($angle != 0) {
-			$cos = (float)($dot / $angle);
-		} else {
-			$cos = (float)$dot;
-		}
-		
-		return ($cos);
+		$dot = $this->dotProduct($rhs);
+		$angle = $this->magnitude() * $rhs->magnitude();	
+		return ((float) $dot / $angle);
 	}
 	// returns the cross multiplication of vectors
 	public function crossProduct(Vector $v) {
