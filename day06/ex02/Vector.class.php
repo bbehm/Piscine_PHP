@@ -31,8 +31,7 @@ class Vector {
 	}
 
 
-	public function __toString()
-    {
+	public function __toString() {
 		return sprintf("Vector( x:%4.2f, y:%4.2f, z:%4.2f, w:%4.2f )", $this->_x, $this->_y, $this->_z, $this->_w);
 	}
 
