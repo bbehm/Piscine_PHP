@@ -14,7 +14,11 @@ class Vector {
 			if (!(isset($vector['orig']))) {
 				$orig = new Vertex ( array( 'x' => 0, 'y' => 0, 'z' => 0, 'w' => 1.0 ));
 			} else {
-				$orig = new Vertex (array( 'x' => $vector['orig']->getX(), 'y' => $vector['orig']->getY(), 'z' => $vector['orig']->getZ() ));
+				$orig = new Vertex (array(
+					'x' => $vector['orig']->getX(),
+					'y' => $vector['orig']->getY(),
+					'z' => $vector['orig']->getZ()
+				));
 			}
 			$this->_x = $vector['dest']->getX() - $orig->getX();
 			$this->_y = $vector['dest']->getY() - $orig->getY();
@@ -30,57 +34,8 @@ class Vector {
 			echo $this . ' destructed' . PHP_EOL;
 	}
 
-
 	public function __toString() {
 		return sprintf("Vector( x:%4.2f, y:%4.2f, z:%4.2f, w:%4.2f )", $this->_x, $this->_y, $this->_z, $this->_w);
-	}
-
-	public function magnitude() {
-		$magnitude = (float)sqrt((pow($this->_x, 2) + pow($this->_y, 2) + pow($this->_z, 2)));
-		if ($magnitude == 1) {
-			return ("norm");
-		} else {
-			return ($magnitude);
-		}
-	}
-
-	public function normalize() {
-		$mag = $this->magnitude();
-		if ($mag != 1) {
-			$result = (new Vector(array ('dest' => new Vertex (array('x' => $this->_x / $mag, 'y' => $this->_y / $mag, 'z' => $this->_z / $mag )))));
-			return ($result);
-		} else {
-			return (clone($this));
-		}
-	}
-
-	public function add(Vector $rhs) {
-		$result = new Vector (array('dest' => new Vertex(array( 'x' => $this->getX() + $rhs->getX(), 'y' => $this->getY() + $rhs->getY(), 'z' => $this->getZ() + $rhs->getZ() ))));
-		return ($result);
-	}
-	public function sub(Vector $rhs) {
-		$result = new Vector (array('dest' => new Vertex(array( 'x' => $this->getX() - $rhs->getX(), 'y' => $this->getY() - $rhs->getY(), 'z' => $this->getZ() - $rhs->getZ() ))));
-		return ($result);
-	}
-	public function opposite() {
-		$result = new Vector (array('dest' => new Vertex(array( 'x' => $this->getX() * -1, 'y' => $this->getY() * -1, 'z' => $this->getZ() * -1 ))));
-		return ($result);
-	}
-	public function dotProduct(Vector $rhs) {
-		return ((float)($this->getX() * $rhs->getX() + $this->getY() * $rhs->getY() + $this->getZ() * $rhs->getZ()));
-	}
-	public function scalarProduct($k) {
-		$result = new Vector (array('dest' => new Vertex(array( 'x' => $this->getX() * $k, 'y' => $this->getY() * $k, 'z' => $this->getZ() * $k ))));
-		return ($result);
-	}
-
-	public function cos(Vector $rhs) {
-		$mag_a = $this->magnitude();
-		$mag_b = $rhs->magnitude();
-		$dot = $this->dotProduct($rhs);
-		$angle = $mag_a * $mag_b;
-		$cos = (float)($dot / $angle);
-		return ($cos);
 	}
 	// get coordinates
 	public function getX() {
@@ -95,8 +50,65 @@ class Vector {
 	public function getW() {
 		return ($this->_w);
 	}
-	public function crossProduct(Vector $v)
-	{
+	// returns vectors length
+	public function magnitude() {
+		$magnitude = (float)sqrt((pow($this->_x, 2) + pow($this->_y, 2) + pow($this->_z, 2)));
+		if ($magnitude == 1) {
+			return ("norm");
+		} else {
+			return ($magnitude);
+		}
+	}
+	// returns normalized (divided by length) version of vector
+	public function normalize() {
+		$mag = $this->magnitude();
+		if ($mag != 1) {
+			$result = (new Vector(array ('dest' => new Vertex (array('x' => $this->_x / $mag, 'y' => $this->_y / $mag, 'z' => $this->_z / $mag )))));
+			return ($result);
+		} else {
+			return (clone($this));
+		}
+	}
+	// returns sum vector of both vectors
+	public function add(Vector $rhs) {
+		$result = new Vector (array('dest' => new Vertex(array( 'x' => $this->getX() + $rhs->getX(), 'y' => $this->getY() + $rhs->getY(), 'z' => $this->getZ() + $rhs->getZ() ))));
+		return ($result);
+	}
+	// returns difference vector of both vectors
+	public function sub(Vector $rhs) {
+		$result = new Vector (array('dest' => new Vertex(array( 'x' => $this->getX() - $rhs->getX(), 'y' => $this->getY() - $rhs->getY(), 'z' => $this->getZ() - $rhs->getZ() ))));
+		return ($result);
+	}
+	// returns the opposite vector
+	public function opposite() {
+		$result = new Vector (array('dest' => new Vertex(array( 'x' => $this->getX() * -1, 'y' => $this->getY() * -1, 'z' => $this->getZ() * -1 ))));
+		return ($result);
+	}
+	// returns scalar multiplication of both vectors
+	public function dotProduct(Vector $rhs) {
+		return ((float)($this->getX() * $rhs->getX() + $this->getY() * $rhs->getY() + $this->getZ() * $rhs->getZ()));
+	}
+	// returns the multiplication of the vector with scalar(k)
+	public function scalarProduct($k) {
+		$result = new Vector (array('dest' => new Vertex(array( 'x' => $this->getX() * $k, 'y' => $this->getY() * $k, 'z' => $this->getZ() * $k ))));
+		return ($result);
+	}
+	// returns cosine betweeen vectors
+	public function cos(Vector $rhs) {
+		$length_one = (int)$this->magnitude();
+		$length_two = (int)$rhs->magnitude();
+		$dot = (int)$this->dotProduct($rhs);
+		$angle = (int)($length_one * $length_two);	
+		if ($angle != 0) {
+			$cos = (float)($dot / $angle);
+		} else {
+			$cos = (float)$dot;
+		}
+		
+		return ($cos);
+	}
+	// returns the cross multiplication of vectors
+	public function crossProduct(Vector $v) {
 		$x = $this->_y * $v->getZ() - $this->_z * $v->getY();
 		$y = $this->_x * $v->getZ() - $this->_z * $v->getX();
 		$y = -$y;
@@ -105,7 +117,7 @@ class Vector {
 	}
 	// print documentation
 	public static function doc() {
-        echo file_get_contents("Color.doc.txt");
+        echo file_get_contents("Vector.doc.txt");
 	}
 }
 ?>
