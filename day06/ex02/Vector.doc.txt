@@ -1,0 +1,41 @@
+
+<- Vector ----------------------------------------------------------------------
+The Vector Class handles vectors in a three dimensional space. It constructs
+a vector from two vertices:
+
+			($array['dest']) which is mandatory
+			($array['orig']) which defaults to (0,0,0,1) when not given
+
+new Vector( array( 'orig' => $vtxO, 'dest' => $vtxX ) );
+
+The class has the following methods:
+
+float magnitude();
+Returns the length of the vector
+
+Vector normalize();
+Returns a normalized version of the vector. If the vector is already normalized
+it returns a fresh copy of the vector.
+
+Vector add( Vector $rhs );
+Returns the sum of both vectors.
+
+Vector sub( Vector $rhs );
+Returns the difference vector of both vectors.
+
+Vector opposite();
+Returns the opposite vector.
+
+Vector scalarProduct( $k );
+Returns the scalar multiplication of both vectors.
+
+float dotProduct( Vector $rhs );
+Returns the multiplication of the vector with a scalar.
+
+float cos( Vector $rhs );
+Returns the cosine of the angle between the two vectors.
+
+Vector crossProduct( Vector $rhs);
+Returns the cross multiplication of both vectors (right-hand system).
+
+---------------------------------------------------------------------- Vector ->
