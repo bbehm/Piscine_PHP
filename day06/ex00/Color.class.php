@@ -17,17 +17,17 @@ class Color {
 			$this->red = (int)$rgb['red'];
 		} else {
 			$this->blue = (int)$rgb['rgb'] & 255;
-			$this->green = (int)$rgb['rgb'] >> 16 & 0xFF;
+			$this->green = (int)$rgb['rgb'] >> 8 & 0xFF;
 			$this->red = (int)$rgb['rgb'] >> 16 & 0xFF;
 		}
 		if (self::$verbose) {
-			echo $this . "constructed" . PHP_EOL;
+			echo $this . ' constructed.' . PHP_EOL;
 		}
 	}
 
 	public function __destruct() {
 		if (self::$verbose) {
-			echo $this . "destructed" . PHP_EOL;
+			echo $this . ' destructed.' . PHP_EOL;
 		}
 	}
 	
