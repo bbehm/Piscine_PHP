@@ -3,8 +3,8 @@
 The Vector Class handles vectors in a three dimensional space. It constructs
 a vector from two vertices:
 
-			($array['dest']) which is mandatory
-			($array['orig']) which defaults to (0,0,0,1) when not given
+		($array['dest']) which is mandatory
+		($array['orig']) which defaults to (0,0,0,1) when not given
 
 new Vector( array( 'orig' => $vtxO, 'dest' => $vtxX ) );
 
