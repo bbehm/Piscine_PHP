@@ -44,7 +44,7 @@ class Vertex {
 	*/
 	public function __destruct() {
 		if (self::$verbose) {
-			echo $this . ' destructed' . PHP_EOL . ".";
+			echo $this . ' destructed' . PHP_EOL;
 		}
 	}
 	// get coordinates
