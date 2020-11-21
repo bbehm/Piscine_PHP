@@ -15,8 +15,8 @@
 					if (y < 0 || x < 0 || isNaN(y) || isNaN(x)) {
 						alert("Error :(");
 					} else if ((operator === "%" || operator === "/") && y === 0) {
-						alert("It's over 9000!");
 						console.log("It's over 9000!");
+						alert("It's over 9000!");
 					} else {
 						let result = 0;
 						switch (operator) {
@@ -36,8 +36,8 @@
 								result = x % y;
 								break;
 						}
-						alert(result);
 						console.log(result);
+						alert(result);
 					}
 				})
 			})

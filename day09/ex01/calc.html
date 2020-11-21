@@ -19,8 +19,8 @@
 				if (!Number.isInteger(x) || !Number.isInteger(y)) {
 					alert("Error :(");
 				} else if ((operator === "%" || operator === "/") && y === 0) {
-					alert ("It's over 9000!");
 					console.log("It's over 9000!");
+					alert ("It's over 9000!");
 				} else {
 					let result = 0;
 					switch(operator) {
@@ -40,8 +40,8 @@
 							result = x % y;
 							break;
 					}
+					console.log(result.toString());
 					alert(result.toString());
-					console.log(result.toStrin());
 				}
 			}
 		</script>
