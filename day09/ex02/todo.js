@@ -14,7 +14,7 @@ if (task_id > 0) {
     });
 }
 // opens prompt on-click and saves new to do as cookie + adds to DOM
-document.getElementById('new').addEventListener('click', e => {
+document.getElementById('newToDo').addEventListener('click', e => {
     e.preventDefault();
     const task = prompt("New TO DO:")
     if (task && task.trim()) {
