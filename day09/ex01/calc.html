@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator</title>
+	</head>
+	<body>
+		<script>
+			function myCalculator() {
+				let x = document.getElementById("x");
+				let y = document.getElementById("y");
+				if (x.value < 0 || y.value < 0) {
+					alert("Error :(");
+					return ;
+				}
+				x = +x.value;
+				y = +y.value;
+				let operator = document.getElementById("operator");
+				operator = operator.options[operator.selectedIndex].value;
+				if (!Number.isInteger(x) || !Number.isInteger(y)) {
+					alert("Error :(");
+				} else if ((operator === "%" || operator === "/") && y === 0) {
+					alert ("It's over 9000!");
+					console.log("It's over 9000!");
+				} else {
+					let result = 0;
+					switch(operator) {
+						case "+":
+							result = x + y;
+							break ;
+						case "-":
+							result = x - y;
+							break;
+						case "*":
+							result = x * y;
+							break;
+						case "/":
+							result = x / y;
+							break;
+						case "%":
+							result = x % y;
+							break;
+					}
+					alert(result.toString());
+					console.log(result.toStrin());
+				}
+			}
+		</script>
+		<script> setInterval(function(){alert("Please, use me...")}, 30000);</script>
+		<form name="calculator" onsubmit="myCalculator()">
+			<input id ="x" type="text"/>
+			<select name="operators" id="operator">
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+				<option value="%">%</option>
+			</select>
+			<input id="y" type="text"/>
+			<input type="submit" value="Try me!"/>
+		</form>
+	</body>
+</html>
