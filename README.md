@@ -12,25 +12,11 @@ The ten different days are...
 - __Day 05__ - MySQL
 - __Day 06__ - PHP Object Oriented Programming
 - __Day 07__ - PHP Inheritance and Interfaces
-- __Day 08__ - Everything learned so far
+- __Day 08__ - NOT COMPLETED
 - __Day 09__ - JavaScript basics
 
 ...and the two bigger projects
 
-- __Rush00__ - A simple webshop
-- __Rush01__ -
+- __Rush00__ - [A simple webshop](https://github.com/bbehm/simple_webshop)
+- __Rush01__ - NOT COMPLETED
 
----
-
-## Resources
-
-__HTML & CSS__
-- [How to center in CSS](http://howtocenterincss.com/)
-
-__PHP__
-- [Youtube channel](https://www.youtube.com/playlist?list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-)
-- `php --rf 'functionName'`
-
-__REGEX__
-- [regexr.com](https://regexr.com/)
-- [regex101.com](https://regex101.com/)
